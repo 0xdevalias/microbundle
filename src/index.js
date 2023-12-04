@@ -689,6 +689,7 @@ function createConfig(options, entry, format, writeMeta) {
 			freeze: false,
 			esModule: false,
 			sourcemap: options.sourcemap,
+			sourcemapIgnoreList: true,
 			get banner() {
 				return shebang[options.name];
 			},
