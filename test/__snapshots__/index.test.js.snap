@@ -734,14 +734,14 @@ basic-multi-source-css
 Build \\"basic-multi-source-css\\" to dist:
 104 B: a.js.gz
 61 B: a.js.br
-105 B: a.esm.mjs.gz
-67 B: a.esm.mjs.br
+108 B: a.esm.mjs.gz
+73 B: a.esm.mjs.br
 201 B: a.umd.js.gz
 133 B: a.umd.js.br
 104 B: b.js.gz
 61 B: b.js.br
-106 B: b.esm.mjs.gz
-67 B: b.esm.mjs.br
+108 B: b.esm.mjs.gz
+76 B: b.esm.mjs.br
 201 B: b.umd.js.gz
 134 B: b.umd.js.br"
 `;
@@ -754,7 +754,7 @@ exports[`fixtures build basic-multi-source-css with microbundle 3`] = `
 `;
 
 exports[`fixtures build basic-multi-source-css with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"a\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"a\\",e}export{e as default};
 //# sourceMappingURL=a.esm.mjs.map
 "
 `;
@@ -777,7 +777,7 @@ exports[`fixtures build basic-multi-source-css with microbundle 7`] = `
 `;
 
 exports[`fixtures build basic-multi-source-css with microbundle 8`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"b\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"b\\",e}export{e as default};
 //# sourceMappingURL=b.esm.mjs.map
 "
 `;
