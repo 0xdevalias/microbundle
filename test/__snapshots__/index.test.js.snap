@@ -231,7 +231,7 @@ Build \\"basic-lib\\" to dist:
 exports[`fixtures build basic with microbundle 2`] = `6`;
 
 exports[`fixtures build basic with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=basic-lib.esm.mjs.map
 "
 `;
@@ -351,7 +351,7 @@ var index = (function () {
   }
 });
 
-export default index;
+export { index as default };
 //# sourceMappingURL=basic-compress-false.esm.mjs.map
 "
 `;
@@ -463,7 +463,7 @@ exports[`fixtures build basic-css with microbundle 3`] = `
 `;
 
 exports[`fixtures build basic-css with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"testing\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"testing\\",e}export{e as default};
 //# sourceMappingURL=basic-css.esm.mjs.map
 "
 `;
@@ -511,7 +511,7 @@ Build \\"basic-dashed-external\\" to dist:
 exports[`fixtures build basic-dashed-external with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-dashed-external with microbundle 3`] = `
-"import r from\\"tiny-glob\\";var e=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};console.log(r);export default function(){try{var r=arguments,t=[].slice.call(r);return Promise.resolve(e.apply(void 0,t)).then(function(r){return Promise.resolve(e.apply(void 0,t)).then(function(e){return[r,e]})})}catch(r){return Promise.reject(r)}}
+"import r from\\"tiny-glob\\";var e=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};console.log(r);var t=function(){try{var r=arguments,t=[].slice.call(r);return Promise.resolve(e.apply(void 0,t)).then(function(r){return Promise.resolve(e.apply(void 0,t)).then(function(e){return[r,e]})})}catch(r){return Promise.reject(r)}};export{t as default};
 //# sourceMappingURL=basic-dashed-external.esm.mjs.map
 "
 `;
@@ -559,7 +559,7 @@ Build \\"basic-lib-flow\\" to dist:
 exports[`fixtures build basic-flow with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-flow with microbundle 3`] = `
-"export default[\\"banana\\",\\"raspberry\\"];
+"var a=[\\"banana\\",\\"raspberry\\"];export{a as default};
 //# sourceMappingURL=basic-lib-flow.esm.mjs.map
 "
 `;
@@ -607,7 +607,7 @@ Build \\"basic-json\\" to dist:
 exports[`fixtures build basic-json with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-json with microbundle 3`] = `
-"var e={test:\\"true\\"};export default function(){return Promise.resolve(e)}
+"var e={test:\\"true\\"},r=function(){return Promise.resolve(e)};export{r as default};
 //# sourceMappingURL=basic-json.esm.mjs.map
 "
 `;
@@ -754,7 +754,7 @@ exports[`fixtures build basic-multi-source-css with microbundle 3`] = `
 `;
 
 exports[`fixtures build basic-multi-source-css with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"a\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"a\\",e}export{e as default};
 //# sourceMappingURL=a.esm.mjs.map
 "
 `;
@@ -777,7 +777,7 @@ exports[`fixtures build basic-multi-source-css with microbundle 7`] = `
 `;
 
 exports[`fixtures build basic-multi-source-css with microbundle 8`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"b\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"b\\",e}export{e as default};
 //# sourceMappingURL=b.esm.mjs.map
 "
 `;
@@ -850,7 +850,7 @@ var index = (function () {
   }
 });
 
-export default index;
+export { index as default };
 //# sourceMappingURL=basic-no-compress.esm.mjs.map
 "
 `;
@@ -1032,7 +1032,7 @@ Build \\"basic-lib-ts\\" to dist:
 exports[`fixtures build basic-ts with microbundle 2`] = `8`;
 
 exports[`fixtures build basic-ts with microbundle 3`] = `
-"var n=new(/*#__PURE__*/function(){function n(){}return n.prototype.drive=function(n){return!0},n}());export default n;
+"var n=new(/*#__PURE__*/function(){function n(){}return n.prototype.drive=function(n){return!0},n}());export{n as default};
 //# sourceMappingURL=basic-lib-ts.esm.mjs.map
 "
 `;
@@ -1099,7 +1099,7 @@ Build \\"basic-lib-tsx\\" to dist:
 exports[`fixtures build basic-tsx with microbundle 2`] = `7`;
 
 exports[`fixtures build basic-tsx with microbundle 3`] = `
-"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=/*#__PURE__*/function(){function r(){}return r.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"))},r}();export default r;
+"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=/*#__PURE__*/function(){function r(){}return r.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"))},r}();export{r as default};
 //# sourceMappingURL=basic-lib-tsx.esm.mjs.map
 "
 `;
@@ -1155,7 +1155,7 @@ Build \\"basic\\" to dist:
 exports[`fixtures build basic-with-cwd with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-with-cwd with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=basic.esm.mjs.map
 "
 `;
@@ -1205,7 +1205,7 @@ Build \\"class-decorators-ts\\" to dist:
 exports[`fixtures build class-decorators-ts with microbundle 2`] = `7`;
 
 exports[`fixtures build class-decorators-ts with microbundle 3`] = `
-"var e=/*#__PURE__*/function(){function e(e){this.greeting=e}return e.prototype.greet=function(){return\\"Hello, \\"+this.greeting},e}(),t=new(e=function(e,t,r,n){var o,c=arguments.length,l=c<3?t:null===n?n=Object.getOwnPropertyDescriptor(t,r):n;if(\\"object\\"==typeof Reflect&&\\"function\\"==typeof Reflect.decorate)l=Reflect.decorate(e,t,r,n);else for(var f=e.length-1;f>=0;f--)(o=e[f])&&(l=(c<3?o(l):c>3?o(t,r,l):o(t,r))||l);return c>3&&l&&Object.defineProperty(t,r,l),l}([function(e){Object.seal(e),Object.seal(e.prototype)}],e))(\\"Hello World\\");export default t;
+"var e=/*#__PURE__*/function(){function e(e){this.greeting=e}return e.prototype.greet=function(){return\\"Hello, \\"+this.greeting},e}(),t=new(e=function(e,t,r,n){var o,c=arguments.length,l=c<3?t:null===n?n=Object.getOwnPropertyDescriptor(t,r):n;if(\\"object\\"==typeof Reflect&&\\"function\\"==typeof Reflect.decorate)l=Reflect.decorate(e,t,r,n);else for(var f=e.length-1;f>=0;f--)(o=e[f])&&(l=(c<3?o(l):c>3?o(t,r,l):o(t,r))||l);return c>3&&l&&Object.defineProperty(t,r,l),l}([function(e){Object.seal(e),Object.seal(e.prototype)}],e))(\\"Hello World\\");export{t as default};
 //# sourceMappingURL=class-decorators-ts.esm.mjs.map
 "
 `;
@@ -1263,7 +1263,7 @@ Build \\"class-properties\\" to dist:
 exports[`fixtures build class-properties with microbundle 2`] = `6`;
 
 exports[`fixtures build class-properties with microbundle 3`] = `
-"var a=function(){this.baz=3};a.bar=2;var r=new a;export default r;export{a as Foo};
+"var a=function(){this.baz=3};a.bar=2;var r=new a;export{a as Foo,r as default};
 //# sourceMappingURL=class-properties.esm.mjs.map
 "
 `;
@@ -1312,7 +1312,7 @@ exports[`fixtures build css-modules--false with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--false with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_shouldnt_be_scoped{background-color:#00f}.not_scoped_class{color:pink}"`;
 
 exports[`fixtures build css-modules--false with microbundle 4`] = `
-"function t(){}export default t;
+"function t(){}export{t as default};
 "
 `;
 
@@ -1358,7 +1358,7 @@ exports[`fixtures build css-modules--null with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--null with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_shouldnt_be_scoped{background-color:#00f}._2kWDE{color:pink}"`;
 
 exports[`fixtures build css-modules--null with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE\\",e}export{e as default};
 "
 `;
 
@@ -1404,7 +1404,7 @@ exports[`fixtures build css-modules--string with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--string with microbundle 3`] = `"body{display:flex;color:red;background:#00f}._contains_this_81567d0efc15a456670452d3277e1a68{background-color:#00f}._contains_this_0a8c24df242c2cd708036873307aea94{color:pink}"`;
 
 exports[`fixtures build css-modules--string with microbundle 4`] = `
-"function a(){var a=document.createElement(\\"div\\");return a.className=\\"_contains_this_0a8c24df242c2cd708036873307aea94 _contains_this_81567d0efc15a456670452d3277e1a68\\",a}export default a;
+"function a(){var a=document.createElement(\\"div\\");return a.className=\\"_contains_this_0a8c24df242c2cd708036873307aea94 _contains_this_81567d0efc15a456670452d3277e1a68\\",a}export{a as default};
 "
 `;
 
@@ -1450,7 +1450,7 @@ exports[`fixtures build css-modules--true with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--true with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_should_be_scoped{background-color:#00f}._2kWDE{color:pink}"`;
 
 exports[`fixtures build css-modules--true with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE \\"+(void 0).test_class_that_should_be_scoped,e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE \\"+(void 0).test_class_that_should_be_scoped,e}export{e as default};
 "
 `;
 
@@ -1546,7 +1546,7 @@ Build \\"custom-outputs\\" to dist:
 exports[`fixtures build custom-outputs with microbundle 2`] = `8`;
 
 exports[`fixtures build custom-outputs with microbundle 3`] = `
-"async function n(...n){return n.reduce((n,t)=>n+t,0)}async function t(...t){return[await n(...t),await n(...t)]}export default t;
+"async function a(...a){return a.reduce((a,n)=>a+n,0)}async function n(...n){return[await a(...n),await a(...n)]}export{n as default};
 //# sourceMappingURL=custom-outputs.exportsx.mjs.map
 "
 `;
@@ -1558,7 +1558,7 @@ exports[`fixtures build custom-outputs with microbundle 4`] = `
 `;
 
 exports[`fixtures build custom-outputs with microbundle 5`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-outputs.modulex.mjs.map
 "
 `;
@@ -1610,13 +1610,13 @@ exports[`fixtures build custom-outputs-alt with microbundle 3`] = `
 `;
 
 exports[`fixtures build custom-outputs-alt with microbundle 4`] = `
-"async function n(...n){return n.reduce((n,t)=>n+t,0)}async function t(...t){return[await n(...t),await n(...t)]}export default t;
+"async function a(...a){return a.reduce((a,n)=>a+n,0)}async function n(...n){return[await a(...n),await a(...n)]}export{n as default};
 //# sourceMappingURL=custom-outputs-alt.esmodule.mjs.map
 "
 `;
 
 exports[`fixtures build custom-outputs-alt with microbundle 5`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-outputs-alt.jsnextmain.mjs.map
 "
 `;
@@ -1658,7 +1658,7 @@ Build \\"custom-source\\" to dist:
 exports[`fixtures build custom-source with microbundle 2`] = `6`;
 
 exports[`fixtures build custom-source with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-source.esm.mjs.map
 "
 `;
@@ -1706,7 +1706,7 @@ Build \\"custom-src\\" to dist:
 exports[`fixtures build custom-source-with-cwd with microbundle 2`] = `6`;
 
 exports[`fixtures build custom-source-with-cwd with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-src.esm.mjs.map
 "
 `;
@@ -1753,7 +1753,7 @@ Build \\"default-named\\" to dist:
 exports[`fixtures build default-named with microbundle 2`] = `6`;
 
 exports[`fixtures build default-named with microbundle 3`] = `
-"var t=42;function e(){}export default e;export{t as foo};
+"var a=42;function t(){}export{t as default,a as foo};
 //# sourceMappingURL=default-named.esm.mjs.map
 "
 `;
@@ -1867,7 +1867,7 @@ Build \\"esnext-ts\\" to dist:
 exports[`fixtures build esnext-ts with microbundle 2`] = `7`;
 
 exports[`fixtures build esnext-ts with microbundle 3`] = `
-"function n(t,e,i){if(!t.s){if(i instanceof r){if(!i.s)return void(i.o=n.bind(null,t,e));1&e&&(e=i.s),i=i.v}if(i&&i.then)return void i.then(n.bind(null,t,e),n.bind(null,t,2));t.s=e,t.v=i;var o=t.o;o&&o(t)}}var t=function(){try{var t,o,u,f,h=[],c=!0,v=!1,l=i(function(){return function(i,f){try{var v=function(){t=function(n){var t;if(\\"undefined\\"!=typeof Symbol){if(Symbol.asyncIterator&&null!=(t=n[Symbol.asyncIterator]))return t.call(n);if(Symbol.iterator&&null!=(t=n[Symbol.iterator]))return t.call(n)}throw new TypeError(\\"Object is not async iterable\\")}([1,2]);var i=function(t,i,o){for(var u;;){var f=t();if(e(f)&&(f=f.v),!f)return h;if(f.then){u=0;break}var h=o();if(h&&h.then){if(!e(h)){u=1;break}h=h.s}if(i){var c=i();if(c&&c.then&&!e(c)){u=2;break}}}var v=new r,l=n.bind(null,v,2);return(0===u?f.then(s):1===u?h.then(a):c.then(d)).then(void 0,l),v;function a(r){h=r;do{if(i&&(c=i())&&c.then&&!e(c))return void c.then(d).then(void 0,l);if(!(f=t())||e(f)&&!f.v)return void n(v,1,h);if(f.then)return void f.then(s).then(void 0,l);e(h=o())&&(h=h.v)}while(!h||!h.then);h.then(a).then(void 0,l)}function s(t){t?(h=o())&&h.then?h.then(a).then(void 0,l):a(h):n(v,1,h)}function d(){(f=t())?f.then?f.then(s).then(void 0,l):s(f):n(v,1,h)}}(function(){return Promise.resolve(t.next()).then(function(n){return c=o.done,o=n,Promise.resolve(o.value).then(function(n){return u=n,!c})})},function(){return!!(c=!0)},function(){h.push(u)});if(i&&i.then)return i.then(function(){})}()}catch(n){return f(n)}return v&&v.then?v.then(void 0,f):v}(0,function(n){v=!0,f=n})},function(n,r){function e(t){if(n)throw r;return r}var o=i(function(){var n=function(){if(!c&&null!=t.return)return Promise.resolve(t.return()).then(function(){})}();if(n&&n.then)return n.then(function(){})},function(n,t){if(v)throw f;if(n)throw t;return t});return o&&o.then?o.then(e):e()});return Promise.resolve(l&&l.then?l.then(function(n){return h}):h)}catch(n){return Promise.reject(n)}};const r=/*#__PURE__*/function(){function t(){}return t.prototype.then=function(r,e){const i=new t,o=this.s;if(o){const t=1&o?r:e;if(t){try{n(i,1,t(this.v))}catch(t){n(i,2,t)}return i}return this}return this.o=function(t){try{const o=t.v;1&t.s?n(i,1,r?r(o):o):e?n(i,1,e(o)):n(i,2,o)}catch(t){n(i,2,t)}},i},t}();function e(n){return n instanceof r&&1&n.s}function i(n,t){try{var r=n()}catch(n){return t(!0,n)}return r&&r.then?r.then(t.bind(null,!1),t.bind(null,!0)):t(!1,r)}t().then(console.log);export default t;
+"function n(t,e,i){if(!t.s){if(i instanceof r){if(!i.s)return void(i.o=n.bind(null,t,e));1&e&&(e=i.s),i=i.v}if(i&&i.then)return void i.then(n.bind(null,t,e),n.bind(null,t,2));t.s=e,t.v=i;var o=t.o;o&&o(t)}}var t=function(){try{var t,o,u,f,h=[],c=!0,v=!1,a=i(function(){return function(i,f){try{var v=function(){t=function(n){var t;if(\\"undefined\\"!=typeof Symbol){if(Symbol.asyncIterator&&null!=(t=n[Symbol.asyncIterator]))return t.call(n);if(Symbol.iterator&&null!=(t=n[Symbol.iterator]))return t.call(n)}throw new TypeError(\\"Object is not async iterable\\")}([1,2]);var i=function(t,i,o){for(var u;;){var f=t();if(e(f)&&(f=f.v),!f)return h;if(f.then){u=0;break}var h=o();if(h&&h.then){if(!e(h)){u=1;break}h=h.s}if(i){var c=i();if(c&&c.then&&!e(c)){u=2;break}}}var v=new r,a=n.bind(null,v,2);return(0===u?f.then(s):1===u?h.then(l):c.then(d)).then(void 0,a),v;function l(r){h=r;do{if(i&&(c=i())&&c.then&&!e(c))return void c.then(d).then(void 0,a);if(!(f=t())||e(f)&&!f.v)return void n(v,1,h);if(f.then)return void f.then(s).then(void 0,a);e(h=o())&&(h=h.v)}while(!h||!h.then);h.then(l).then(void 0,a)}function s(t){t?(h=o())&&h.then?h.then(l).then(void 0,a):l(h):n(v,1,h)}function d(){(f=t())?f.then?f.then(s).then(void 0,a):s(f):n(v,1,h)}}(function(){return Promise.resolve(t.next()).then(function(n){return c=o.done,o=n,Promise.resolve(o.value).then(function(n){return u=n,!c})})},function(){return!!(c=!0)},function(){h.push(u)});if(i&&i.then)return i.then(function(){})}()}catch(n){return f(n)}return v&&v.then?v.then(void 0,f):v}(0,function(n){v=!0,f=n})},function(n,r){function e(t){if(n)throw r;return r}var o=i(function(){var n=function(){if(!c&&null!=t.return)return Promise.resolve(t.return()).then(function(){})}();if(n&&n.then)return n.then(function(){})},function(n,t){if(v)throw f;if(n)throw t;return t});return o&&o.then?o.then(e):e()});return Promise.resolve(a&&a.then?a.then(function(n){return h}):h)}catch(n){return Promise.reject(n)}};const r=/*#__PURE__*/function(){function t(){}return t.prototype.then=function(r,e){const i=new t,o=this.s;if(o){const t=1&o?r:e;if(t){try{n(i,1,t(this.v))}catch(t){n(i,2,t)}return i}return this}return this.o=function(t){try{const o=t.v;1&t.s?n(i,1,r?r(o):o):e?n(i,1,e(o)):n(i,2,o)}catch(t){n(i,2,t)}},i},t}();function e(n){return n instanceof r&&1&n.s}function i(n,t){try{var r=n()}catch(n){return t(!0,n)}return r&&r.then?r.then(t.bind(null,!1),t.bind(null,!0)):t(!1,r)}t().then(console.log);export{t as default};
 //# sourceMappingURL=esnext-ts.esm.mjs.map
 "
 `;
@@ -1917,8 +1917,8 @@ Build \\"inline-source-map\\" to dist:
 exports[`fixtures build inline-source-map with microbundle 2`] = `3`;
 
 exports[`fixtures build inline-source-map with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5saW5lLXNvdXJjZS1tYXAuZXNtLm1qcyIsInNvdXJjZXMiOlsiLi4vc3JjL3R3by5qcyIsIi4uL3NyYy9pbmRleC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgYXN5bmMgZnVuY3Rpb24gdHdvKC4uLmFyZ3MpIHtcblx0cmV0dXJuIGFyZ3MucmVkdWNlKCh0b3RhbCwgdmFsdWUpID0+IHRvdGFsICsgdmFsdWUsIDApO1xufVxuIiwiaW1wb3J0IHsgdHdvIH0gZnJvbSAnLi90d28nO1xuXG5leHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiguLi5hcmdzKSB7XG5cdHJldHVybiBbYXdhaXQgdHdvKC4uLmFyZ3MpLCBhd2FpdCB0d28oLi4uYXJncyldO1xufVxuIl0sIm5hbWVzIjpbInR3byIsInJlZHVjZSIsInRvdGFsIiwidmFsdWUiLCJhcmdzIl0sIm1hcHBpbmdzIjoiSUFBc0JBLGlDQUNyQix1QkFBTyxpQkFBS0MsT0FBTyxTQUFDQyxFQUFPQyxVQUFVRCxFQUFRQyxHQUFPLElBRHJELGtGQ0VpQ0MsMENBQ2xCSixlQUFPSSw0Q0FBYUosZUFBT0kscUJBQXpDLE1BQU8sVUFEUiJ9
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5saW5lLXNvdXJjZS1tYXAuZXNtLm1qcyIsInNvdXJjZXMiOlsiLi4vc3JjL3R3by5qcyIsIi4uL3NyYy9pbmRleC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgYXN5bmMgZnVuY3Rpb24gdHdvKC4uLmFyZ3MpIHtcblx0cmV0dXJuIGFyZ3MucmVkdWNlKCh0b3RhbCwgdmFsdWUpID0+IHRvdGFsICsgdmFsdWUsIDApO1xufVxuIiwiaW1wb3J0IHsgdHdvIH0gZnJvbSAnLi90d28nO1xuXG5leHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiguLi5hcmdzKSB7XG5cdHJldHVybiBbYXdhaXQgdHdvKC4uLmFyZ3MpLCBhd2FpdCB0d28oLi4uYXJncyldO1xufVxuIl0sIm5hbWVzIjpbInR3byIsIl9hcmd1bWVudHMyIiwiYXJndW1lbnRzIiwiUHJvbWlzZSIsInJlc29sdmUiLCJyZWR1Y2UiLCJ0b3RhbCIsInZhbHVlIiwiZSIsInJlamVjdCIsImluZGV4IiwiYXJncyIsImFwcGx5IiwidGhlbiIsIl90d28iLCJfdHdvMiJdLCJtYXBwaW5ncyI6IkFBQXNCQSxJQUFBQSxFQUF0QixlQUNDLElBQUFDLEVBQUFDLFVBQUEsT0FBQUMsUUFBQUMsUUFBTyxHQUFLQyxNQUFBQSxLQUFBQSxHQUFBQSxPQUFPLFNBQUNDLEVBQU9DLEdBQVVELE9BQUFBLEVBQVFDLEdBQU8sSUFEckQsTUFBQUMsR0FBQSxPQUFBTCxRQUFBTSxPQUFBRCxLQ0VBRSxFQUFBLFdBQUEsb0JBQWlDQyxFQUNsQlgsR0FBQUEsTUFBQUEsS0FBQUEsR0FBQUEsT0FBQUEsUUFBQUEsUUFBQUEsRUFBQVksV0FBQSxFQUFPRCxJQURpQkUsS0FBQSxTQUFBQyxHQUFBLE9BQUFYLFFBQUFDLFFBQ0pKLEVBQUdZLFdBQUlELEVBQUFBLElBQXpDRSxLQUFBLFNBQUFFLEdBQUEsTUFBTyxDQUQrQkQsRUFBQUMsT0FBdkMsTUFBQVAsR0FBQSxPQUFBTCxRQUFBTSxPQUFBRCJ9
 "
 `;
 
@@ -1963,7 +1963,7 @@ Build \\"jsx\\" to dist:
 exports[`fixtures build jsx with microbundle 2`] = `6`;
 
 exports[`fixtures build jsx with microbundle 3`] = `
-"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=function(n){return n.children},l=/*#__PURE__*/function(){function l(){}return l.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"),n(r,null,n(\\"p\\",null,\\"Test fragment\\")))},l}();export default l;
+"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=function(n){return n.children},l=/*#__PURE__*/function(){function l(){}return l.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"),n(r,null,n(\\"p\\",null,\\"Test fragment\\")))},l}();export{l as default};
 //# sourceMappingURL=jsx.esm.mjs.map
 "
 `;
@@ -2012,7 +2012,7 @@ Build \\"macro-lib\\" to dist:
 exports[`fixtures build macro with microbundle 2`] = `6`;
 
 exports[`fixtures build macro with microbundle 3`] = `
-"export default\\"name-macro\\";
+"var a=\\"name-macro\\";export{a as default};
 //# sourceMappingURL=macro-lib.esm.mjs.map
 "
 `;
@@ -2061,7 +2061,7 @@ Build \\"mangle-json-file\\" to dist:
 exports[`fixtures build mangle-json-file with microbundle 2`] = `6`;
 
 exports[`fixtures build mangle-json-file with microbundle 3`] = `
-"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export default r;
+"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export{r as default};
 //# sourceMappingURL=mangle-json-file.esm.mjs.map
 "
 `;
@@ -2109,7 +2109,7 @@ Build \\"minify-config\\" to dist:
 exports[`fixtures build minify-config with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-config with microbundle 3`] = `
-"var o={prop1:1,o:2};function r(){return console.log(o.prop1),console.log(o.o),o}export default r;
+"var o={prop1:1,o:2};function r(){return console.log(o.prop1),console.log(o.o),o}export{r as default};
 //# sourceMappingURL=minify-config.esm.mjs.map
 "
 `;
@@ -2157,7 +2157,7 @@ Build \\"minify-config-boolean\\" to dist:
 exports[`fixtures build minify-config-boolean with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-config-boolean with microbundle 3`] = `
-"var two={prop1:1,_prop2:2};function index(){return console.log(two.prop1),console.log(two._prop2),two}export default index;
+"var two={prop1:1,_prop2:2};function index(){return console.log(two.prop1),console.log(two._prop2),two}export{index as default};
 //# sourceMappingURL=minify-config-boolean.esm.mjs.map
 "
 `;
@@ -2206,7 +2206,7 @@ Build \\"minify-path-config\\" to dist:
 exports[`fixtures build minify-path-config with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-path-config with microbundle 3`] = `
-"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export default r;
+"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export{r as default};
 //# sourceMappingURL=minify-path-config.esm.mjs.map
 "
 `;
@@ -2253,7 +2253,7 @@ Build \\"minify-path-parent-dir\\" to dist:
 exports[`fixtures build minify-path-parent-dir-with-cwd with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-path-parent-dir-with-cwd with microbundle 3`] = `
-"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export default r;
+"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export{r as default};
 //# sourceMappingURL=minify-path-parent-dir.esm.mjs.map
 "
 `;
@@ -2293,7 +2293,7 @@ Build \\"modern-lib\\" to dist:
 exports[`fixtures build modern with microbundle 2`] = `2`;
 
 exports[`fixtures build modern with microbundle 3`] = `
-"async function n(...n){return n.reduce((n,t)=>n+t,0)}async function t(...t){return[await n(...t),await n(...t)]}export default t;
+"async function a(...a){return a.reduce((a,n)=>a+n,0)}async function n(...n){return[await a(...n),await a(...n)]}export{n as default};
 //# sourceMappingURL=modern-lib.modern.mjs.map
 "
 `;
@@ -2333,7 +2333,7 @@ Build \\"modern-generators\\" to dist:
 exports[`fixtures build modern-generators with microbundle 2`] = `8`;
 
 exports[`fixtures build modern-generators with microbundle 3`] = `
-"var e=/*#__PURE__*/regeneratorRuntime.mark(r);function r(){var r;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:r=0;case 1:return e.next=4,r++;case 4:e.next=1;break;case 6:case\\"end\\":return e.stop()}},e)}export default function(){try{var e=r();return Promise.resolve([e.next().value,e.next().value])}catch(e){return Promise.reject(e)}}
+"var e=/*#__PURE__*/regeneratorRuntime.mark(r);function r(){var r;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:r=0;case 1:return e.next=4,r++;case 4:e.next=1;break;case 6:case\\"end\\":return e.stop()}},e)}var t=function(){try{var e=r();return Promise.resolve([e.next().value,e.next().value])}catch(e){return Promise.reject(e)}};export{t as default};
 //# sourceMappingURL=modern-generators.esm.mjs.map
 "
 `;
@@ -2345,7 +2345,7 @@ exports[`fixtures build modern-generators with microbundle 4`] = `
 `;
 
 exports[`fixtures build modern-generators with microbundle 5`] = `
-"async function e(){const e=function*(){let e=0;for(;;)yield e++}();return[e.next().value,e.next().value]}export default e;
+"async function e(){const e=function*(){let e=0;for(;;)yield e++}();return[e.next().value,e.next().value]}export{e as default};
 //# sourceMappingURL=modern-generators.modern.mjs.map
 "
 `;
@@ -2387,7 +2387,7 @@ Build \\"name-custom-amd\\" to dist:
 exports[`fixtures build name-custom-amd with microbundle 2`] = `6`;
 
 exports[`fixtures build name-custom-amd with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=name-custom-amd.esm.mjs.map
 "
 `;
@@ -2435,7 +2435,7 @@ Build \\"name-custom\\" to dist:
 exports[`fixtures build name-custom-cli with microbundle 2`] = `6`;
 
 exports[`fixtures build name-custom-cli with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=name-custom.esm.mjs.map
 "
 `;
@@ -2482,7 +2482,7 @@ Build \\"no-pkg\\" to dist:
 exports[`fixtures build no-pkg with microbundle 2`] = `6`;
 
 exports[`fixtures build no-pkg with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=no-pkg.esm.mjs.map
 "
 `;
@@ -2530,7 +2530,7 @@ Build \\"no-pkg-name\\" to dist:
 exports[`fixtures build no-pkg-name with microbundle 2`] = `6`;
 
 exports[`fixtures build no-pkg-name with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=no-pkg-name.esm.mjs.map
 "
 `;
@@ -2909,7 +2909,7 @@ Build \\"terser-annotations\\" to dist:
 exports[`fixtures build terser-annotations with microbundle 2`] = `6`;
 
 exports[`fixtures build terser-annotations with microbundle 3`] = `
-"function shouldBePreserved(e,n){return e-n}function main(e,n){return{inlined:/*@__INLINE__*/function(e,n){return e+n}(e,n),preserved:/*@__NOINLINE__*/shouldBePreserved(e,n)}}export default main;
+"function shouldBePreserved(e,n){return e-n}function main(e,n){return{inlined:/*@__INLINE__*/function(e,n){return e+n}(e,n),preserved:/*@__NOINLINE__*/shouldBePreserved(e,n)}}export{main as default};
 //# sourceMappingURL=terser-annotations.esm.mjs.map
 "
 `;
@@ -3150,7 +3150,7 @@ export default Ferrari;
 `;
 
 exports[`fixtures build ts-mixed-exports with microbundle 5`] = `
-"var t=/*#__PURE__*/function(){function t(){}return t.prototype.drive=function(t){return!0},t}(),n=new t;export default n;export{t as Car};
+"var n=/*#__PURE__*/function(){function n(){}return n.prototype.drive=function(n){return!0},n}(),t=new n;export{n as Car,t as default};
 //# sourceMappingURL=ts-mixed-exports.esm.mjs.map
 "
 `;
@@ -3260,7 +3260,7 @@ Build \\"visualizer\\" to dist:
 exports[`fixtures build visualizer with microbundle 2`] = `6`;
 
 exports[`fixtures build visualizer with microbundle 3`] = `
-"import a from\\"camelcase\\";var o=a(\\"foo-bar\\");export default o;
+"import a from\\"camelcase\\";var o=a(\\"foo-bar\\");export{o as default};
 //# sourceMappingURL=visualizer.esm.mjs.map
 "
 `;
