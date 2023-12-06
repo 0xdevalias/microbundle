@@ -2003,8 +2003,8 @@ macro
 Build \\"macro-lib\\" to dist:
 49 B: macro-lib.js.gz
 33 B: macro-lib.js.br
-48 B: macro-lib.esm.mjs.gz
-32 B: macro-lib.esm.mjs.br
+61 B: macro-lib.esm.mjs.gz
+45 B: macro-lib.esm.mjs.br
 156 B: macro-lib.umd.js.gz
 126 B: macro-lib.umd.js.br"
 `;
@@ -2012,7 +2012,7 @@ Build \\"macro-lib\\" to dist:
 exports[`fixtures build macro with microbundle 2`] = `6`;
 
 exports[`fixtures build macro with microbundle 3`] = `
-"export default\\"name-macro\\";
+"var a=\\"name-macro\\";export{a as default};
 //# sourceMappingURL=macro-lib.esm.mjs.map
 "
 `;
