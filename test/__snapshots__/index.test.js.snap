@@ -317,9 +317,9 @@ basic-compress-false
 Build \\"basic-compress-false\\" to dist:
 260 B: basic-compress-false.js.gz
 206 B: basic-compress-false.js.br
-258 B: basic-compress-false.esm.mjs.gz
-209 B: basic-compress-false.esm.mjs.br
-383 B: basic-compress-false.umd.js.gz
+263 B: basic-compress-false.esm.mjs.gz
+212 B: basic-compress-false.esm.mjs.br
+384 B: basic-compress-false.umd.js.gz
 305 B: basic-compress-false.umd.js.br"
 `;
 
@@ -351,7 +351,7 @@ var index = (function () {
   }
 });
 
-export default index;
+export { index as default };
 //# sourceMappingURL=basic-compress-false.esm.mjs.map
 "
 `;
@@ -392,7 +392,7 @@ exports[`fixtures build basic-compress-false with microbundle 5`] = `
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
 	(global = global || self, global.basicCompressFalse = factory());
-}(this, (function () {
+})(this, (function () {
 	var two = function two() {
 	  try {
 	    var _arguments2 = arguments;
@@ -420,7 +420,7 @@ exports[`fixtures build basic-compress-false with microbundle 5`] = `
 
 	return index;
 
-})));
+}));
 //# sourceMappingURL=basic-compress-false.umd.js.map
 "
 `;
