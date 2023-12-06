@@ -2100,8 +2100,8 @@ minify-config
 Build \\"minify-config\\" to dist:
 99 B: minify-config.js.gz
 85 B: minify-config.js.br
-101 B: minify-config.esm.mjs.gz
-87 B: minify-config.esm.mjs.br
+103 B: minify-config.esm.mjs.gz
+76 B: minify-config.esm.mjs.br
 189 B: minify-config.umd.js.gz
 140 B: minify-config.umd.js.br"
 `;
@@ -2109,7 +2109,7 @@ Build \\"minify-config\\" to dist:
 exports[`fixtures build minify-config with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-config with microbundle 3`] = `
-"var o={prop1:1,o:2};function r(){return console.log(o.prop1),console.log(o.o),o}export default r;
+"var o={prop1:1,o:2};function r(){return console.log(o.prop1),console.log(o.o),o}export{r as default};
 //# sourceMappingURL=minify-config.esm.mjs.map
 "
 `;
@@ -2148,8 +2148,8 @@ minify-config-boolean
 Build \\"minify-config-boolean\\" to dist:
 107 B: minify-config-boolean.js.gz
 84 B: minify-config-boolean.js.br
-114 B: minify-config-boolean.esm.mjs.gz
-90 B: minify-config-boolean.esm.mjs.br
+117 B: minify-config-boolean.esm.mjs.gz
+92 B: minify-config-boolean.esm.mjs.br
 216 B: minify-config-boolean.umd.js.gz
 159 B: minify-config-boolean.umd.js.br"
 `;
@@ -2157,7 +2157,7 @@ Build \\"minify-config-boolean\\" to dist:
 exports[`fixtures build minify-config-boolean with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-config-boolean with microbundle 3`] = `
-"var two={prop1:1,_prop2:2};function index(){return console.log(two.prop1),console.log(two._prop2),two}export default index;
+"var two={prop1:1,_prop2:2};function index(){return console.log(two.prop1),console.log(two._prop2),two}export{index as default};
 //# sourceMappingURL=minify-config-boolean.esm.mjs.map
 "
 `;
@@ -2197,8 +2197,8 @@ minify-path-config
 Build \\"minify-path-config\\" to dist:
 103 B: minify-path-config.js.gz
 89 B: minify-path-config.js.br
-105 B: minify-path-config.esm.mjs.gz
-91 B: minify-path-config.esm.mjs.br
+108 B: minify-path-config.esm.mjs.gz
+79 B: minify-path-config.esm.mjs.br
 198 B: minify-path-config.umd.js.gz
 152 B: minify-path-config.umd.js.br"
 `;
@@ -2206,7 +2206,7 @@ Build \\"minify-path-config\\" to dist:
 exports[`fixtures build minify-path-config with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-path-config with microbundle 3`] = `
-"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export default r;
+"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export{r as default};
 //# sourceMappingURL=minify-path-config.esm.mjs.map
 "
 `;
@@ -2244,8 +2244,8 @@ minify-path-parent-dir
 Build \\"minify-path-parent-dir\\" to dist:
 103 B: minify-path-parent-dir.js.gz
 89 B: minify-path-parent-dir.js.br
-105 B: minify-path-parent-dir.esm.mjs.gz
-91 B: minify-path-parent-dir.esm.mjs.br
+108 B: minify-path-parent-dir.esm.mjs.gz
+79 B: minify-path-parent-dir.esm.mjs.br
 200 B: minify-path-parent-dir.umd.js.gz
 161 B: minify-path-parent-dir.umd.js.br"
 `;
@@ -2253,7 +2253,7 @@ Build \\"minify-path-parent-dir\\" to dist:
 exports[`fixtures build minify-path-parent-dir-with-cwd with microbundle 2`] = `6`;
 
 exports[`fixtures build minify-path-parent-dir-with-cwd with microbundle 3`] = `
-"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export default r;
+"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export{r as default};
 //# sourceMappingURL=minify-path-parent-dir.esm.mjs.map
 "
 `;
