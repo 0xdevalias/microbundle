@@ -1196,8 +1196,8 @@ class-decorators-ts
 Build \\"class-decorators-ts\\" to dist:
 348 B: class-decorators-ts.js.gz
 288 B: class-decorators-ts.js.br
-348 B: class-decorators-ts.esm.mjs.gz
-288 B: class-decorators-ts.esm.mjs.br
+352 B: class-decorators-ts.esm.mjs.gz
+293 B: class-decorators-ts.esm.mjs.br
 415 B: class-decorators-ts.umd.js.gz
 353 B: class-decorators-ts.umd.js.br"
 `;
@@ -1205,7 +1205,7 @@ Build \\"class-decorators-ts\\" to dist:
 exports[`fixtures build class-decorators-ts with microbundle 2`] = `7`;
 
 exports[`fixtures build class-decorators-ts with microbundle 3`] = `
-"var e=/*#__PURE__*/function(){function e(e){this.greeting=e}return e.prototype.greet=function(){return\\"Hello, \\"+this.greeting},e}(),t=new(e=function(e,t,r,n){var o,c=arguments.length,l=c<3?t:null===n?n=Object.getOwnPropertyDescriptor(t,r):n;if(\\"object\\"==typeof Reflect&&\\"function\\"==typeof Reflect.decorate)l=Reflect.decorate(e,t,r,n);else for(var f=e.length-1;f>=0;f--)(o=e[f])&&(l=(c<3?o(l):c>3?o(t,r,l):o(t,r))||l);return c>3&&l&&Object.defineProperty(t,r,l),l}([function(e){Object.seal(e),Object.seal(e.prototype)}],e))(\\"Hello World\\");export default t;
+"var e=/*#__PURE__*/function(){function e(e){this.greeting=e}return e.prototype.greet=function(){return\\"Hello, \\"+this.greeting},e}(),t=new(e=function(e,t,r,n){var o,c=arguments.length,l=c<3?t:null===n?n=Object.getOwnPropertyDescriptor(t,r):n;if(\\"object\\"==typeof Reflect&&\\"function\\"==typeof Reflect.decorate)l=Reflect.decorate(e,t,r,n);else for(var f=e.length-1;f>=0;f--)(o=e[f])&&(l=(c<3?o(l):c>3?o(t,r,l):o(t,r))||l);return c>3&&l&&Object.defineProperty(t,r,l),l}([function(e){Object.seal(e),Object.seal(e.prototype)}],e))(\\"Hello World\\");export{t as default};
 //# sourceMappingURL=class-decorators-ts.esm.mjs.map
 "
 `;
