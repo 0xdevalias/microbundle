@@ -2473,8 +2473,8 @@ no-pkg
 Build \\"no-pkg\\" to dist:
 187 B: no-pkg.js.gz
 138 B: no-pkg.js.br
-188 B: no-pkg.esm.mjs.gz
-139 B: no-pkg.esm.mjs.br
+193 B: no-pkg.esm.mjs.gz
+148 B: no-pkg.esm.mjs.br
 270 B: no-pkg.umd.js.gz
 216 B: no-pkg.umd.js.br"
 `;
@@ -2482,7 +2482,7 @@ Build \\"no-pkg\\" to dist:
 exports[`fixtures build no-pkg with microbundle 2`] = `6`;
 
 exports[`fixtures build no-pkg with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=no-pkg.esm.mjs.map
 "
 `;
@@ -2521,8 +2521,8 @@ no-pkg-name
 Build \\"no-pkg-name\\" to dist:
 187 B: no-pkg-name.js.gz
 138 B: no-pkg-name.js.br
-188 B: no-pkg-name.esm.mjs.gz
-139 B: no-pkg-name.esm.mjs.br
+193 B: no-pkg-name.esm.mjs.gz
+148 B: no-pkg-name.esm.mjs.br
 274 B: no-pkg-name.umd.js.gz
 219 B: no-pkg-name.umd.js.br"
 `;
@@ -2530,7 +2530,7 @@ Build \\"no-pkg-name\\" to dist:
 exports[`fixtures build no-pkg-name with microbundle 2`] = `6`;
 
 exports[`fixtures build no-pkg-name with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=no-pkg-name.esm.mjs.map
 "
 `;
