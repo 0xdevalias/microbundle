@@ -222,8 +222,8 @@ basic
 Build \\"basic-lib\\" to dist:
 187 B: basic-lib.js.gz
 138 B: basic-lib.js.br
-188 B: basic-lib.esm.mjs.gz
-139 B: basic-lib.esm.mjs.br
+193 B: basic-lib.esm.mjs.gz
+148 B: basic-lib.esm.mjs.br
 273 B: basic-lib.umd.js.gz
 211 B: basic-lib.umd.js.br"
 `;
@@ -231,7 +231,7 @@ Build \\"basic-lib\\" to dist:
 exports[`fixtures build basic with microbundle 2`] = `6`;
 
 exports[`fixtures build basic with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=basic-lib.esm.mjs.map
 "
 `;
