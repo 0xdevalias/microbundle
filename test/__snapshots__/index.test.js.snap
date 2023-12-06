@@ -1535,10 +1535,10 @@ custom-outputs
 Build \\"custom-outputs\\" to dist:
 187 B: custom-outputs.js.gz
 138 B: custom-outputs.js.br
-113 B: custom-outputs.exportsx.mjs.gz
-92 B: custom-outputs.exportsx.mjs.br
-188 B: custom-outputs.modulex.mjs.gz
-139 B: custom-outputs.modulex.mjs.br
+116 B: custom-outputs.exportsx.mjs.gz
+99 B: custom-outputs.exportsx.mjs.br
+193 B: custom-outputs.modulex.mjs.gz
+148 B: custom-outputs.modulex.mjs.br
 273 B: custom-outputs.umdx.js.gz
 203 B: custom-outputs.umdx.js.br"
 `;
@@ -1546,7 +1546,7 @@ Build \\"custom-outputs\\" to dist:
 exports[`fixtures build custom-outputs with microbundle 2`] = `8`;
 
 exports[`fixtures build custom-outputs with microbundle 3`] = `
-"async function n(...n){return n.reduce((n,t)=>n+t,0)}async function t(...t){return[await n(...t),await n(...t)]}export default t;
+"async function a(...a){return a.reduce((a,n)=>a+n,0)}async function n(...n){return[await a(...n),await a(...n)]}export{n as default};
 //# sourceMappingURL=custom-outputs.exportsx.mjs.map
 "
 `;
@@ -1558,7 +1558,7 @@ exports[`fixtures build custom-outputs with microbundle 4`] = `
 `;
 
 exports[`fixtures build custom-outputs with microbundle 5`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-outputs.modulex.mjs.map
 "
 `;
@@ -1593,10 +1593,10 @@ custom-outputs-alt
 Build \\"custom-outputs-alt\\" to dist:
 187 B: custom-outputs-alt.cjsmain.js.gz
 138 B: custom-outputs-alt.cjsmain.js.br
-113 B: custom-outputs-alt.esmodule.mjs.gz
-92 B: custom-outputs-alt.esmodule.mjs.br
-188 B: custom-outputs-alt.jsnextmain.mjs.gz
-139 B: custom-outputs-alt.jsnextmain.mjs.br
+116 B: custom-outputs-alt.esmodule.mjs.gz
+99 B: custom-outputs-alt.esmodule.mjs.br
+193 B: custom-outputs-alt.jsnextmain.mjs.gz
+148 B: custom-outputs-alt.jsnextmain.mjs.br
 277 B: custom-outputs-alt.unpkg.js.gz
 226 B: custom-outputs-alt.unpkg.js.br"
 `;
@@ -1610,13 +1610,13 @@ exports[`fixtures build custom-outputs-alt with microbundle 3`] = `
 `;
 
 exports[`fixtures build custom-outputs-alt with microbundle 4`] = `
-"async function n(...n){return n.reduce((n,t)=>n+t,0)}async function t(...t){return[await n(...t),await n(...t)]}export default t;
+"async function a(...a){return a.reduce((a,n)=>a+n,0)}async function n(...n){return[await a(...n),await a(...n)]}export{n as default};
 //# sourceMappingURL=custom-outputs-alt.esmodule.mjs.map
 "
 `;
 
 exports[`fixtures build custom-outputs-alt with microbundle 5`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-outputs-alt.jsnextmain.mjs.map
 "
 `;
@@ -1649,8 +1649,8 @@ custom-source
 Build \\"custom-source\\" to dist:
 187 B: custom-source.js.gz
 138 B: custom-source.js.br
-188 B: custom-source.esm.mjs.gz
-139 B: custom-source.esm.mjs.br
+193 B: custom-source.esm.mjs.gz
+148 B: custom-source.esm.mjs.br
 275 B: custom-source.umd.js.gz
 203 B: custom-source.umd.js.br"
 `;
@@ -1658,7 +1658,7 @@ Build \\"custom-source\\" to dist:
 exports[`fixtures build custom-source with microbundle 2`] = `6`;
 
 exports[`fixtures build custom-source with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-source.esm.mjs.map
 "
 `;
@@ -1697,8 +1697,8 @@ custom-source
 Build \\"custom-src\\" to dist:
 187 B: custom-src.js.gz
 138 B: custom-src.js.br
-188 B: custom-src.esm.mjs.gz
-139 B: custom-src.esm.mjs.br
+193 B: custom-src.esm.mjs.gz
+148 B: custom-src.esm.mjs.br
 273 B: custom-src.umd.js.gz
 203 B: custom-src.umd.js.br"
 `;
@@ -1706,7 +1706,7 @@ Build \\"custom-src\\" to dist:
 exports[`fixtures build custom-source-with-cwd with microbundle 2`] = `6`;
 
 exports[`fixtures build custom-source-with-cwd with microbundle 3`] = `
-"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};export default function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}}
+"var r=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}},e=function(){try{var e=arguments,t=[].slice.call(e);return Promise.resolve(r.apply(void 0,t)).then(function(e){return Promise.resolve(r.apply(void 0,t)).then(function(r){return[e,r]})})}catch(r){return Promise.reject(r)}};export{e as default};
 //# sourceMappingURL=custom-src.esm.mjs.map
 "
 `;
