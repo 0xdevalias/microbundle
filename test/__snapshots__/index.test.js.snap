@@ -3123,8 +3123,8 @@ ts-mixed-exports
 Build \\"ts-mixed-exports\\" to dist:
 130 B: ts-mixed-exports.js.gz
 104 B: ts-mixed-exports.js.br
-134 B: ts-mixed-exports.esm.mjs.gz
-118 B: ts-mixed-exports.esm.mjs.br
+132 B: ts-mixed-exports.esm.mjs.gz
+106 B: ts-mixed-exports.esm.mjs.br
 228 B: ts-mixed-exports.umd.js.gz
 185 B: ts-mixed-exports.umd.js.br"
 `;
@@ -3150,7 +3150,7 @@ export default Ferrari;
 `;
 
 exports[`fixtures build ts-mixed-exports with microbundle 5`] = `
-"var t=/*#__PURE__*/function(){function t(){}return t.prototype.drive=function(t){return!0},t}(),n=new t;export default n;export{t as Car};
+"var n=/*#__PURE__*/function(){function n(){}return n.prototype.drive=function(n){return!0},n}(),t=new n;export{n as Car,t as default};
 //# sourceMappingURL=ts-mixed-exports.esm.mjs.map
 "
 `;
