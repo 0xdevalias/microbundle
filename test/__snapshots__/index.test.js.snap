@@ -3251,8 +3251,8 @@ visualizer
 Build \\"visualizer\\" to dist:
 148 B: visualizer.js.gz
 107 B: visualizer.js.br
-79 B: visualizer.esm.mjs.gz
-64 B: visualizer.esm.mjs.br
+84 B: visualizer.esm.mjs.gz
+65 B: visualizer.esm.mjs.br
 231 B: visualizer.umd.js.gz
 195 B: visualizer.umd.js.br"
 `;
@@ -3260,7 +3260,7 @@ Build \\"visualizer\\" to dist:
 exports[`fixtures build visualizer with microbundle 2`] = `6`;
 
 exports[`fixtures build visualizer with microbundle 3`] = `
-"import a from\\"camelcase\\";var o=a(\\"foo-bar\\");export default o;
+"import a from\\"camelcase\\";var o=a(\\"foo-bar\\");export{o as default};
 //# sourceMappingURL=visualizer.esm.mjs.map
 "
 `;
