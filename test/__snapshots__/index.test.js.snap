@@ -1309,7 +1309,7 @@ Build \\"css-modules--false\\" to dist:
 
 exports[`fixtures build css-modules--false with microbundle 2`] = `4`;
 
-exports[`fixtures build css-modules--false with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_shouldnt_be_scoped{background-color:#00f}.not_scoped_class{color:pink}"`;
+exports[`fixtures build css-modules--false with microbundle 3`] = `"body{background:blue;color:red;display:flex}.test_class_that_shouldnt_be_scoped{background-color:blue}.not_scoped_class{color:pink}"`;
 
 exports[`fixtures build css-modules--false with microbundle 4`] = `
 "function t(){}export{t as default};
@@ -1355,7 +1355,7 @@ Build \\"css-modules--null\\" to dist:
 
 exports[`fixtures build css-modules--null with microbundle 2`] = `4`;
 
-exports[`fixtures build css-modules--null with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_shouldnt_be_scoped{background-color:#00f}._2kWDE{color:pink}"`;
+exports[`fixtures build css-modules--null with microbundle 3`] = `"body{background:blue;color:red;display:flex}.test_class_that_shouldnt_be_scoped{background-color:blue}._2kWDE{color:pink}"`;
 
 exports[`fixtures build css-modules--null with microbundle 4`] = `
 "function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE\\",e}export{e as default};
@@ -1401,7 +1401,7 @@ Build \\"css-modules--string\\" to dist:
 
 exports[`fixtures build css-modules--string with microbundle 2`] = `4`;
 
-exports[`fixtures build css-modules--string with microbundle 3`] = `"body{display:flex;color:red;background:#00f}._contains_this_81567d0efc15a456670452d3277e1a68{background-color:#00f}._contains_this_0a8c24df242c2cd708036873307aea94{color:pink}"`;
+exports[`fixtures build css-modules--string with microbundle 3`] = `"body{background:blue;color:red;display:flex}._contains_this_81567d0efc15a456670452d3277e1a68{background-color:blue}._contains_this_0a8c24df242c2cd708036873307aea94{color:pink}"`;
 
 exports[`fixtures build css-modules--string with microbundle 4`] = `
 "function a(){var a=document.createElement(\\"div\\");return a.className=\\"_contains_this_0a8c24df242c2cd708036873307aea94 _contains_this_81567d0efc15a456670452d3277e1a68\\",a}export{a as default};
@@ -1447,7 +1447,7 @@ Build \\"css-modules--true\\" to dist:
 
 exports[`fixtures build css-modules--true with microbundle 2`] = `4`;
 
-exports[`fixtures build css-modules--true with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_should_be_scoped{background-color:#00f}._2kWDE{color:pink}"`;
+exports[`fixtures build css-modules--true with microbundle 3`] = `"body{background:blue;color:red;display:flex}.test_class_that_should_be_scoped{background-color:blue}._2kWDE{color:pink}"`;
 
 exports[`fixtures build css-modules--true with microbundle 4`] = `
 "function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE \\"+(void 0).test_class_that_should_be_scoped,e}export{e as default};
