@@ -1254,8 +1254,8 @@ class-properties
 Build \\"class-properties\\" to dist:
 93 B: class-properties.js.gz
 79 B: class-properties.js.br
-96 B: class-properties.esm.mjs.gz
-85 B: class-properties.esm.mjs.br
+95 B: class-properties.esm.mjs.gz
+84 B: class-properties.esm.mjs.br
 197 B: class-properties.umd.js.gz
 150 B: class-properties.umd.js.br"
 `;
@@ -1263,7 +1263,7 @@ Build \\"class-properties\\" to dist:
 exports[`fixtures build class-properties with microbundle 2`] = `6`;
 
 exports[`fixtures build class-properties with microbundle 3`] = `
-"var a=function(){this.baz=3};a.bar=2;var r=new a;export default r;export{a as Foo};
+"var a=function(){this.baz=3};a.bar=2;var r=new a;export{a as Foo,r as default};
 //# sourceMappingURL=class-properties.esm.mjs.map
 "
 `;
