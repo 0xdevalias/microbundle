@@ -550,8 +550,8 @@ basic-flow
 Build \\"basic-lib-flow\\" to dist:
 57 B: basic-lib-flow.js.gz
 43 B: basic-lib-flow.js.br
-56 B: basic-lib-flow.esm.mjs.gz
-42 B: basic-lib-flow.esm.mjs.br
+69 B: basic-lib-flow.esm.mjs.gz
+51 B: basic-lib-flow.esm.mjs.br
 171 B: basic-lib-flow.umd.js.gz
 132 B: basic-lib-flow.umd.js.br"
 `;
@@ -559,7 +559,7 @@ Build \\"basic-lib-flow\\" to dist:
 exports[`fixtures build basic-flow with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-flow with microbundle 3`] = `
-"export default[\\"banana\\",\\"raspberry\\"];
+"var a=[\\"banana\\",\\"raspberry\\"];export{a as default};
 //# sourceMappingURL=basic-lib-flow.esm.mjs.map
 "
 `;
