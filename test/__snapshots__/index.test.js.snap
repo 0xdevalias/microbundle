@@ -816,10 +816,10 @@ basic-no-compress
 Build \\"basic-no-compress\\" to dist:
 260 B: basic-no-compress.js.gz
 206 B: basic-no-compress.js.br
-258 B: basic-no-compress.esm.mjs.gz
-209 B: basic-no-compress.esm.mjs.br
+263 B: basic-no-compress.esm.mjs.gz
+212 B: basic-no-compress.esm.mjs.br
 381 B: basic-no-compress.umd.js.gz
-310 B: basic-no-compress.umd.js.br"
+324 B: basic-no-compress.umd.js.br"
 `;
 
 exports[`fixtures build basic-no-compress with microbundle 2`] = `6`;
@@ -850,7 +850,7 @@ var index = (function () {
   }
 });
 
-export default index;
+export { index as default };
 //# sourceMappingURL=basic-no-compress.esm.mjs.map
 "
 `;
@@ -891,7 +891,7 @@ exports[`fixtures build basic-no-compress with microbundle 5`] = `
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
 	(global = global || self, global.basicNoCompress = factory());
-}(this, (function () {
+})(this, (function () {
 	var two = function two() {
 	  try {
 	    var _arguments2 = arguments;
@@ -919,7 +919,7 @@ exports[`fixtures build basic-no-compress with microbundle 5`] = `
 
 	return index;
 
-})));
+}));
 //# sourceMappingURL=basic-no-compress.umd.js.map
 "
 `;
