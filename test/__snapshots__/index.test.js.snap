@@ -1301,8 +1301,8 @@ css-modules--false
 Build \\"css-modules--false\\" to dist:
 49 B: css-modules--false.js.gz
 23 B: css-modules--false.js.br
-52 B: css-modules--false.esm.mjs.gz
-36 B: css-modules--false.esm.mjs.br
+56 B: css-modules--false.esm.mjs.gz
+40 B: css-modules--false.esm.mjs.br
 156 B: css-modules--false.umd.js.gz
 109 B: css-modules--false.umd.js.br"
 `;
@@ -1312,7 +1312,7 @@ exports[`fixtures build css-modules--false with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--false with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_shouldnt_be_scoped{background-color:#00f}.not_scoped_class{color:pink}"`;
 
 exports[`fixtures build css-modules--false with microbundle 4`] = `
-"function t(){}export default t;
+"function t(){}export{t as default};
 "
 `;
 
@@ -1347,8 +1347,8 @@ css-modules--null
 Build \\"css-modules--null\\" to dist:
 110 B: css-modules--null.js.gz
 72 B: css-modules--null.js.br
-112 B: css-modules--null.esm.mjs.gz
-77 B: css-modules--null.esm.mjs.br
+114 B: css-modules--null.esm.mjs.gz
+70 B: css-modules--null.esm.mjs.br
 200 B: css-modules--null.umd.js.gz
 140 B: css-modules--null.umd.js.br"
 `;
@@ -1358,7 +1358,7 @@ exports[`fixtures build css-modules--null with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--null with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_shouldnt_be_scoped{background-color:#00f}._2kWDE{color:pink}"`;
 
 exports[`fixtures build css-modules--null with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE\\",e}export{e as default};
 "
 `;
 
@@ -1393,8 +1393,8 @@ css-modules--string
 Build \\"css-modules--string\\" to dist:
 166 B: css-modules--string.js.gz
 118 B: css-modules--string.js.br
-168 B: css-modules--string.esm.mjs.gz
-122 B: css-modules--string.esm.mjs.br
+171 B: css-modules--string.esm.mjs.gz
+130 B: css-modules--string.esm.mjs.br
 263 B: css-modules--string.umd.js.gz
 192 B: css-modules--string.umd.js.br"
 `;
@@ -1404,7 +1404,7 @@ exports[`fixtures build css-modules--string with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--string with microbundle 3`] = `"body{display:flex;color:red;background:#00f}._contains_this_81567d0efc15a456670452d3277e1a68{background-color:#00f}._contains_this_0a8c24df242c2cd708036873307aea94{color:pink}"`;
 
 exports[`fixtures build css-modules--string with microbundle 4`] = `
-"function a(){var a=document.createElement(\\"div\\");return a.className=\\"_contains_this_0a8c24df242c2cd708036873307aea94 _contains_this_81567d0efc15a456670452d3277e1a68\\",a}export default a;
+"function a(){var a=document.createElement(\\"div\\");return a.className=\\"_contains_this_0a8c24df242c2cd708036873307aea94 _contains_this_81567d0efc15a456670452d3277e1a68\\",a}export{a as default};
 "
 `;
 
@@ -1439,8 +1439,8 @@ css-modules--true
 Build \\"css-modules--true\\" to dist:
 139 B: css-modules--true.js.gz
 94 B: css-modules--true.js.br
-141 B: css-modules--true.esm.mjs.gz
-108 B: css-modules--true.esm.mjs.br
+144 B: css-modules--true.esm.mjs.gz
+100 B: css-modules--true.esm.mjs.br
 230 B: css-modules--true.umd.js.gz
 165 B: css-modules--true.umd.js.br"
 `;
@@ -1450,7 +1450,7 @@ exports[`fixtures build css-modules--true with microbundle 2`] = `4`;
 exports[`fixtures build css-modules--true with microbundle 3`] = `"body{display:flex;color:red;background:#00f}.test_class_that_should_be_scoped{background-color:#00f}._2kWDE{color:pink}"`;
 
 exports[`fixtures build css-modules--true with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE \\"+(void 0).test_class_that_should_be_scoped,e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"_2kWDE \\"+(void 0).test_class_that_should_be_scoped,e}export{e as default};
 "
 `;
 
