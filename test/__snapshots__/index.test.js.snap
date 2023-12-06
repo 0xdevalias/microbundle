@@ -2286,14 +2286,14 @@ modern
 
 
 Build \\"modern-lib\\" to dist:
-113 B: modern-lib.modern.mjs.gz
-92 B: modern-lib.modern.mjs.br"
+116 B: modern-lib.modern.mjs.gz
+99 B: modern-lib.modern.mjs.br"
 `;
 
 exports[`fixtures build modern with microbundle 2`] = `2`;
 
 exports[`fixtures build modern with microbundle 3`] = `
-"async function n(...n){return n.reduce((n,t)=>n+t,0)}async function t(...t){return[await n(...t),await n(...t)]}export default t;
+"async function a(...a){return a.reduce((a,n)=>a+n,0)}async function n(...n){return[await a(...n),await a(...n)]}export{n as default};
 //# sourceMappingURL=modern-lib.modern.mjs.map
 "
 `;
@@ -2322,10 +2322,10 @@ modern-generators
 Build \\"modern-generators\\" to dist:
 248 B: modern-generators.js.gz
 201 B: modern-generators.js.br
-118 B: modern-generators.modern.mjs.gz
+120 B: modern-generators.modern.mjs.gz
 99 B: modern-generators.modern.mjs.br
-247 B: modern-generators.esm.mjs.gz
-218 B: modern-generators.esm.mjs.br
+256 B: modern-generators.esm.mjs.gz
+211 B: modern-generators.esm.mjs.br
 326 B: modern-generators.umd.js.gz
 267 B: modern-generators.umd.js.br"
 `;
@@ -2333,7 +2333,7 @@ Build \\"modern-generators\\" to dist:
 exports[`fixtures build modern-generators with microbundle 2`] = `8`;
 
 exports[`fixtures build modern-generators with microbundle 3`] = `
-"var e=/*#__PURE__*/regeneratorRuntime.mark(r);function r(){var r;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:r=0;case 1:return e.next=4,r++;case 4:e.next=1;break;case 6:case\\"end\\":return e.stop()}},e)}export default function(){try{var e=r();return Promise.resolve([e.next().value,e.next().value])}catch(e){return Promise.reject(e)}}
+"var e=/*#__PURE__*/regeneratorRuntime.mark(r);function r(){var r;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:r=0;case 1:return e.next=4,r++;case 4:e.next=1;break;case 6:case\\"end\\":return e.stop()}},e)}var t=function(){try{var e=r();return Promise.resolve([e.next().value,e.next().value])}catch(e){return Promise.reject(e)}};export{t as default};
 //# sourceMappingURL=modern-generators.esm.mjs.map
 "
 `;
@@ -2345,7 +2345,7 @@ exports[`fixtures build modern-generators with microbundle 4`] = `
 `;
 
 exports[`fixtures build modern-generators with microbundle 5`] = `
-"async function e(){const e=function*(){let e=0;for(;;)yield e++}();return[e.next().value,e.next().value]}export default e;
+"async function e(){const e=function*(){let e=0;for(;;)yield e++}();return[e.next().value,e.next().value]}export{e as default};
 //# sourceMappingURL=modern-generators.modern.mjs.map
 "
 `;
