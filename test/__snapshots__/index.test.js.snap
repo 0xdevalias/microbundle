@@ -2052,8 +2052,8 @@ mangle-json-file
 Build \\"mangle-json-file\\" to dist:
 103 B: mangle-json-file.js.gz
 89 B: mangle-json-file.js.br
-105 B: mangle-json-file.esm.mjs.gz
-91 B: mangle-json-file.esm.mjs.br
+108 B: mangle-json-file.esm.mjs.gz
+79 B: mangle-json-file.esm.mjs.br
 196 B: mangle-json-file.umd.js.gz
 171 B: mangle-json-file.umd.js.br"
 `;
@@ -2061,7 +2061,7 @@ Build \\"mangle-json-file\\" to dist:
 exports[`fixtures build mangle-json-file with microbundle 2`] = `6`;
 
 exports[`fixtures build mangle-json-file with microbundle 3`] = `
-"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export default r;
+"var o={prop1:1,__p2:2};function r(){return console.log(o.prop1),console.log(o.__p2),o}export{r as default};
 //# sourceMappingURL=mangle-json-file.esm.mjs.map
 "
 `;
