@@ -458,7 +458,7 @@ Build \\"basic-css\\" to dist:
 exports[`fixtures build basic-css with microbundle 2`] = `8`;
 
 exports[`fixtures build basic-css with microbundle 3`] = `
-".testing{display:flex;color:red;background:#00f}
+".testing{background:blue;color:red;display:flex}
 /*# sourceMappingURL=basic-css.css.map */"
 `;
 
@@ -749,7 +749,7 @@ Build \\"basic-multi-source-css\\" to dist:
 exports[`fixtures build basic-multi-source-css with microbundle 2`] = `16`;
 
 exports[`fixtures build basic-multi-source-css with microbundle 3`] = `
-".a{display:flex;color:green;background:pink}
+".a{background:pink;color:green;display:flex}
 /*# sourceMappingURL=a.css.map */"
 `;
 
@@ -772,7 +772,7 @@ exports[`fixtures build basic-multi-source-css with microbundle 6`] = `
 `;
 
 exports[`fixtures build basic-multi-source-css with microbundle 7`] = `
-".b{display:flex;color:red;background:#00f}
+".b{background:blue;color:red;display:flex}
 /*# sourceMappingURL=b.css.map */"
 `;
 
