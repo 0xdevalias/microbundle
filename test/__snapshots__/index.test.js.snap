@@ -1954,8 +1954,8 @@ jsx
 Build \\"jsx\\" to dist:
 239 B: jsx.js.gz
 195 B: jsx.js.br
-237 B: jsx.esm.mjs.gz
-201 B: jsx.esm.mjs.br
+240 B: jsx.esm.mjs.gz
+202 B: jsx.esm.mjs.br
 313 B: jsx.umd.js.gz
 248 B: jsx.umd.js.br"
 `;
@@ -1963,7 +1963,7 @@ Build \\"jsx\\" to dist:
 exports[`fixtures build jsx with microbundle 2`] = `6`;
 
 exports[`fixtures build jsx with microbundle 3`] = `
-"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=function(n){return n.children},l=/*#__PURE__*/function(){function l(){}return l.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"),n(r,null,n(\\"p\\",null,\\"Test fragment\\")))},l}();export default l;
+"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=function(n){return n.children},l=/*#__PURE__*/function(){function l(){}return l.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"),n(r,null,n(\\"p\\",null,\\"Test fragment\\")))},l}();export{l as default};
 //# sourceMappingURL=jsx.esm.mjs.map
 "
 `;
