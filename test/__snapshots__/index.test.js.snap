@@ -502,8 +502,8 @@ basic-dashed-external
 Build \\"basic-dashed-external\\" to dist:
 276 B: basic-dashed-external.js.gz
 212 B: basic-dashed-external.js.br
-214 B: basic-dashed-external.esm.mjs.gz
-164 B: basic-dashed-external.esm.mjs.br
+220 B: basic-dashed-external.esm.mjs.gz
+173 B: basic-dashed-external.esm.mjs.br
 357 B: basic-dashed-external.umd.js.gz
 285 B: basic-dashed-external.umd.js.br"
 `;
@@ -511,7 +511,7 @@ Build \\"basic-dashed-external\\" to dist:
 exports[`fixtures build basic-dashed-external with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-dashed-external with microbundle 3`] = `
-"import r from\\"tiny-glob\\";var e=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};console.log(r);export default function(){try{var r=arguments,t=[].slice.call(r);return Promise.resolve(e.apply(void 0,t)).then(function(r){return Promise.resolve(e.apply(void 0,t)).then(function(e){return[r,e]})})}catch(r){return Promise.reject(r)}}
+"import r from\\"tiny-glob\\";var e=function(){try{var r=arguments;return Promise.resolve([].slice.call(r).reduce(function(r,e){return r+e},0))}catch(r){return Promise.reject(r)}};console.log(r);var t=function(){try{var r=arguments,t=[].slice.call(r);return Promise.resolve(e.apply(void 0,t)).then(function(r){return Promise.resolve(e.apply(void 0,t)).then(function(e){return[r,e]})})}catch(r){return Promise.reject(r)}};export{t as default};
 //# sourceMappingURL=basic-dashed-external.esm.mjs.map
 "
 `;
