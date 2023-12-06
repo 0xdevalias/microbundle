@@ -2900,8 +2900,8 @@ terser-annotations
 Build \\"terser-annotations\\" to dist:
 133 B: terser-annotations.js.gz
 104 B: terser-annotations.js.br
-138 B: terser-annotations.esm.mjs.gz
-97 B: terser-annotations.esm.mjs.br
+143 B: terser-annotations.esm.mjs.gz
+105 B: terser-annotations.esm.mjs.br
 224 B: terser-annotations.umd.js.gz
 169 B: terser-annotations.umd.js.br"
 `;
@@ -2909,7 +2909,7 @@ Build \\"terser-annotations\\" to dist:
 exports[`fixtures build terser-annotations with microbundle 2`] = `6`;
 
 exports[`fixtures build terser-annotations with microbundle 3`] = `
-"function shouldBePreserved(e,n){return e-n}function main(e,n){return{inlined:/*@__INLINE__*/function(e,n){return e+n}(e,n),preserved:/*@__NOINLINE__*/shouldBePreserved(e,n)}}export default main;
+"function shouldBePreserved(e,n){return e-n}function main(e,n){return{inlined:/*@__INLINE__*/function(e,n){return e+n}(e,n),preserved:/*@__NOINLINE__*/shouldBePreserved(e,n)}}export{main as default};
 //# sourceMappingURL=terser-annotations.esm.mjs.map
 "
 `;
