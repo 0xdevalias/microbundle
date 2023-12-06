@@ -598,8 +598,8 @@ basic-json
 Build \\"basic-json\\" to dist:
 93 B: basic-json.js.gz
 65 B: basic-json.js.br
-92 B: basic-json.esm.mjs.gz
-64 B: basic-json.esm.mjs.br
+97 B: basic-json.esm.mjs.gz
+77 B: basic-json.esm.mjs.br
 180 B: basic-json.umd.js.gz
 129 B: basic-json.umd.js.br"
 `;
@@ -607,7 +607,7 @@ Build \\"basic-json\\" to dist:
 exports[`fixtures build basic-json with microbundle 2`] = `6`;
 
 exports[`fixtures build basic-json with microbundle 3`] = `
-"var e={test:\\"true\\"};export default function(){return Promise.resolve(e)}
+"var e={test:\\"true\\"},r=function(){return Promise.resolve(e)};export{r as default};
 //# sourceMappingURL=basic-json.esm.mjs.map
 "
 `;
