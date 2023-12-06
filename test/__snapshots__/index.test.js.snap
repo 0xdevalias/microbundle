@@ -942,8 +942,8 @@ basic-no-pkg-main
 Build \\"basic-no-pkg-main\\" to dist:
 187 B: basic-no-pkg-main.js.gz
 138 B: basic-no-pkg-main.js.br
-188 B: basic-no-pkg-main.js.gz
-139 B: basic-no-pkg-main.js.br
+193 B: basic-no-pkg-main.js.gz
+148 B: basic-no-pkg-main.js.br
 278 B: basic-no-pkg-main.js.gz
 229 B: basic-no-pkg-main.js.br"
 `;
