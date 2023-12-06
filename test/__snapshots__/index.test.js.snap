@@ -1744,8 +1744,8 @@ default-named
 Build \\"default-named\\" to dist:
 60 B: default-named.js.gz
 46 B: default-named.js.br
-74 B: default-named.esm.mjs.gz
-62 B: default-named.esm.mjs.br
+71 B: default-named.esm.mjs.gz
+58 B: default-named.esm.mjs.br
 169 B: default-named.umd.js.gz
 122 B: default-named.umd.js.br"
 `;
@@ -1753,7 +1753,7 @@ Build \\"default-named\\" to dist:
 exports[`fixtures build default-named with microbundle 2`] = `6`;
 
 exports[`fixtures build default-named with microbundle 3`] = `
-"var t=42;function e(){}export default e;export{t as foo};
+"var a=42;function t(){}export{t as default,a as foo};
 //# sourceMappingURL=default-named.esm.mjs.map
 "
 `;
