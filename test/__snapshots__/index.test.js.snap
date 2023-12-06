@@ -1090,8 +1090,8 @@ basic-tsx
 Build \\"basic-lib-tsx\\" to dist:
 213 B: basic-lib-tsx.js.gz
 164 B: basic-lib-tsx.js.br
-218 B: basic-lib-tsx.esm.mjs.gz
-172 B: basic-lib-tsx.esm.mjs.br
+220 B: basic-lib-tsx.esm.mjs.gz
+182 B: basic-lib-tsx.esm.mjs.br
 298 B: basic-lib-tsx.umd.js.gz
 232 B: basic-lib-tsx.umd.js.br"
 `;
@@ -1099,7 +1099,7 @@ Build \\"basic-lib-tsx\\" to dist:
 exports[`fixtures build basic-tsx with microbundle 2`] = `7`;
 
 exports[`fixtures build basic-tsx with microbundle 3`] = `
-"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=/*#__PURE__*/function(){function r(){}return r.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"))},r}();export default r;
+"var n=function(n,r){return{tag:n,props:r,children:[].slice.call(arguments,2)}},r=/*#__PURE__*/function(){function r(){}return r.prototype.render=function(){return n(\\"div\\",{id:\\"app\\"},n(\\"h1\\",null,\\"Hello, World!\\"),n(\\"p\\",null,\\"A JSX demo.\\"))},r}();export{r as default};
 //# sourceMappingURL=basic-lib-tsx.esm.mjs.map
 "
 `;
