@@ -1023,8 +1023,8 @@ basic-ts
 Build \\"basic-lib-ts\\" to dist:
 118 B: basic-lib-ts.js.gz
 94 B: basic-lib-ts.js.br
-118 B: basic-lib-ts.esm.mjs.gz
-97 B: basic-lib-ts.esm.mjs.br
+122 B: basic-lib-ts.esm.mjs.gz
+87 B: basic-lib-ts.esm.mjs.br
 201 B: basic-lib-ts.umd.js.gz
 150 B: basic-lib-ts.umd.js.br"
 `;
@@ -1032,7 +1032,7 @@ Build \\"basic-lib-ts\\" to dist:
 exports[`fixtures build basic-ts with microbundle 2`] = `8`;
 
 exports[`fixtures build basic-ts with microbundle 3`] = `
-"var n=new(/*#__PURE__*/function(){function n(){}return n.prototype.drive=function(n){return!0},n}());export default n;
+"var n=new(/*#__PURE__*/function(){function n(){}return n.prototype.drive=function(n){return!0},n}());export{n as default};
 //# sourceMappingURL=basic-lib-ts.esm.mjs.map
 "
 `;
