@@ -449,8 +449,8 @@ basic-css
 Build \\"basic-css\\" to dist:
 107 B: basic-css.js.gz
 60 B: basic-css.js.br
-109 B: basic-css.esm.mjs.gz
-67 B: basic-css.esm.mjs.br
+111 B: basic-css.esm.mjs.gz
+75 B: basic-css.esm.mjs.br
 195 B: basic-css.umd.js.gz
 138 B: basic-css.umd.js.br"
 `;
@@ -463,7 +463,7 @@ exports[`fixtures build basic-css with microbundle 3`] = `
 `;
 
 exports[`fixtures build basic-css with microbundle 4`] = `
-"function e(){var e=document.createElement(\\"div\\");return e.className=\\"testing\\",e}export default e;
+"function e(){var e=document.createElement(\\"div\\");return e.className=\\"testing\\",e}export{e as default};
 //# sourceMappingURL=basic-css.esm.mjs.map
 "
 `;
